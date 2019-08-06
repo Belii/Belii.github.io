@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Valen Dance</title>
+	<link rel="shortcut icon" type="image/x-icon"href="img/favicon1.ico" >
+	<!-- Bootstrap v3.4.1 Grid Styles -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{margin-right:-15px;margin-left:-15px}.row-no-gutters{margin-right:0;margin-left:0}.row-no-gutters [class*="col-"]{padding-right:0;padding-left:0}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-right:15px;padding-left:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{display:table;content:" "}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-right:auto;margin-left:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}</style>
+ 	<link href="../sass/fontawersome.css" rel="stylesheet">
+ 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+ 	<link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+<!-- Header CSS _header.min.css -->
+<style></style>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" >
+
+</head>
+<body>
+
+	<header class="main-head">
+		<div class="container">
+			<div class="row">
+
+				<div class="menu-line clearfix">
+					<div class="сol-lg-4 col-md-3 col-sm-12 col-xs-12">
+						<a href="#"><i class="fas fa-barcode"></i>ValenDance</a>
+					</div>
+
+					<div class="сol-lg-8 col-md-9 col-sm-12 col-xs-12">
+						<nav class="main-mnu">
+							<input type="checkbox" name="toogle" id="menu" class="toogle-menu">
+							<label for="menu" class="toggle-menu"><i class="fas fa-bars"></i>Меню</label>
+							<ul>
+								<li><a href="#pro-id"><i class="fas fa-info-circle"></i>Про</a></li>
+								<li><a href="#service-id"><i class="fas fa-folder-open"></i>Послуги</a></li>
+								<li><a href="#schedule-id"><i class="fas fa-file-alt"></i>Розклад</a></li>
+								<li><a href="#contacts-id"><i class="fas fa-phone-square"></i>Контакти</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+				<div class="heder-center">
+					<div class="header-text">
+						<p>
+							Жіночий танцювальний центр <sapn>ValenDance</sapn>
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	<section id="pro-id" class="pro-info s-wide">
+
+		<div class="container">
+			<div class="row">
+
+				<div class="intro-h1">
+					<div class="сol-lg-12 col-md-12 col-sm-12 col-sx-12">
+						<H1>
+							Валентина Космина
+						</H1>
+					</div>
+				</div>
+
+				<div class="intro-foto-text">
+					<div class="сol-lg-6 col-md-6 col-sm-12 col-sx-12">
+						<div class="foto-valia" >
+						</div>
+						<p> Тренер, хореограф, практичний психолог, танцювально-руховий терапевт.</p>
+					</div>
+
+					<div class="сol-lg-6 col-md-6 col-sm-12 col-sx-12">
+						<div class="intro-text">
+
+							<blockquote>
+								Викладаю танець та рухові практики з 2007 року.
+								Вважаю, що у жінки повинен бути безпечний простір поза роботою/домом/сім’єю, де вона буде виплексувати енергію, відпускати накопичені турботи, зажими в тілі, досліджувати (себе), якою інакшою вона може бути, вдосконалювати фігуру.
+								Місце для здійснення найзаповітніших мрій. Якщо твоя мрія - красиво рухатися, відчувати своє тіло, дозволяти йому проявлятися - танцювати - тобі до нас.
+							</blockquote>
+
+							<ul>
+								<li>Освіта:</li>
+								<li>
+									<ol>
+										<li> КНУ ім. Т. Шевченка, практична психологія.</li>
+										<li> Центральний інститут підвищення кваліфікації, Центр психології руху "Малюма і такете", сучасна хореографія, арт-терапія, танцювально-рухова терапія.
+												Основний стиль - контемпорарі/contemporary dance. </li>
+										<li> Додатково вивчала класичний танець, соматичні практики, йогу, сальсу, тверк, модерн, східні танці. На тренуваннях люблю комбінувати ці техніки, оскільки їх мікс допомагає проявити жіночність та прокачати тіло.</li>
+									</ol>
+								</li>
+
+							</ul>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="pro-missian s-wide">
+		<div class="container">
+			<div class="row">
+
+				<!-- <div class="info-missian"> -->
+					<div class="сol-lg-3 col-md-3 col-sm-3">
+						<div class="missian">
+							місія
+						</div>
+					</div>
+
+					<div class="сol-lg-9 col-md-9 col-sm-9">
+						<blockquote class="text-missian">
+							Відновити природню гармонию і свободу руху. З насолодою та задоволенням виражати себе в русі і танці.
+						</blockquote>
+					</div>
+				<!-- </div> -->
+
+			</div>
+		</div>
+	</section>
+
+	<section class="pro-yt s-wide">
+		<div class="container">
+			<div class="row">
+				<div class="сol-lg-5 col-md-5 col-sm-12 col-sx-12">
+					<h1>You create dance creates you</h1>
+				</div>
+				<div class="сol-lg-7 col-md-7 col-sm-12 col-sx-12">
+					<div class="yt">
+						<iframe width="650" height="381" src="https://www.youtube.com/embed/xqS-TycpPEU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<!-- <video poster="img/poster.jpg" controls class="pro-video">
+							<source src="video/lebidky_web.webm" type="video/webm">
+						</video> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="pro-razom-zVD s-wide">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>Ви разом з ValenDance</p>
+				</div>
+				<div class="сol-lg-4 col-md-4 col-sm-4">
+					<div class="pro-item-zVD">
+						<span>
+							<i class="fas fa-user-graduate"></i>
+						</span>
+						<h3>Красиве тіло</h3>
+						<p>мудре, живе, сильне, чуттєве. Тіло, в якому хочеться жити і творити.</p>
+					</div>
+				</div>
+				<div class="сol-lg-4 col-md-4 col-sm-4">
+					<div class="pro-item-zVD">
+						<span>
+							<i class="fas fa-book-reader"></i>
+						</span>
+						<h3>Здійсенення мрій</h3>
+						<p>граційно рухатися, танцювати, виступати, насолоджуватися собою в танці.</p>	
+					</div>
+				</div>
+				<div class="сol-lg-4 col-md-4 col-sm-4">
+					<div class="pro-item-zVD">
+						<span>
+							<i class="fas fa-robot"></i>
+						</span>
+						<h3>Міцна спільнота лебідок</h3>
+						<p>взаємо підтримка та простір, де радо вітатимуть прояв твого творчоно потенціалу.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="service-id" class="service s-wide">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-12">
+					<p>Послуги</p>
+				</div>
+
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="dws-form">
+
+						<input type="radio" name="tabs" id="tab-1" checked>
+						<label class="tab " for="tab-1" title="Вкладка 1">Регулярні тренування</label>
+
+						<input type="radio" name="tabs" id="tab-2">		
+						<label class="tab" for="tab-2" title="Вкладка 2">Виїзні програми</label>			
+
+						<input type="radio" name="tabs" id="tab-3">
+						<label class="tab " for="tab-3" title="Вкладка 3">Програма розвитку</label>
+
+						<input type="radio" name="tabs" id="tab-4">		
+						<label class="tab" for="tab-4" title="Вкладка 4">Інші активності</label>
+
+						<input type="radio" name="tabs" id="tab-5">		
+						<label class="tab" for="tab-5" title="Вкладка 5">Сауна і stratching</label>
+						
+						<div class="img-fon"><img src="img/fone_items.jpg" alt=""></div> 
+
+						<div id="service-1" class="tab-services ">
+							<p>Регулярні тренування<i class="fas fa-angle-right"></i></p>
+							<ul>
+								<li><a href="#">Contamporary</a></li>
+								<li><a href="#">Stratching</a></li>
+								<li><a href="#">Танець імпровізація</a></li>
+								<li><a href="#">Програма вихідного дня</a></li>
+								<li><a href="#">Класичний танець</a></li>
+							</ul>
+						</div>
+
+						<div id="service-2" class="tab-services ">
+							<p>Виїзні програми<i class="fas fa-angle-right"></i></p>
+							<ul>
+								<li><a href="#">Україна (весна/осінь)<span><i class="fas fa-map-marker-alt"></i>Карпати</span></a></li>
+								<li><a href="#">Закордон (осінь) </a></li>
+							</ul>
+						</div>
+
+						<div id="service-3" class="tab-services ">
+							<p>Програма розвитку<i class="fas fa-angle-right"></i></p>
+							<ul>
+								<li><a href="#">Антистрес</a></li>
+								<li><a href="#">Звільнення від зажимів</a></li>
+								<li><a href="#">Програма стихій</a></li>
+								<li><a href="#">Створення образів</a></li>
+								<li><a href="#">Розвиток комунікацій</a></li>
+							</ul>
+						</div>
+
+						<div id="service-4" class="tab-services ">
+							<p>Інші активності<i class="fas fa-angle-right"></i></p>
+							<ul>
+								<li><a href="#">Фото і відео зйомка</a></li>
+								<li><a href="#">Лекторій</a></li>
+								<li><a href="#">Майстер-класи (запрошених гостей)</a></li>
+								<li><a href="#">Вуличні тренування (open space)</a></li>
+								<li><a href="#">Виступи на events</a></li>
+								<li><a href="#">Дівич-паті (прогулянка, подорожі, тематичні зустрічі)</a></li>
+							</ul>
+						</div>
+
+						<div id="service-5" class="tab-services ">
+							<p>Сауна і stratching<i class="fas fa-angle-right"></i></p>
+							<ul>
+									<li><a href="#">Сауна + Stratching</a></li>
+							</ul>
+						</div>
+
+					</div>	
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+<section id="schedule-id" class="schedule s-wide" >
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="schedule-list">
+					<p>Розклад</p>
+					<div class="div-line"></div>
+						<div class="days-list">
+							<div class="div-wrap-days">
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<div class="block-left">Понеділок</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<ul class="block-right">
+										<li>18:30 - 19:30</li>
+										<li>Танцювальний стретчінг</li>
+										<li>19:30 - 20:30</li>
+										<li>Contemporary dance</li>
+									</ul>
+								</div>
+							</div>
+							<div class="div-wrap-days">
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<div class="block-left">Середа</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<ul class="block-right">
+										<li>18:30 - 19:30</li>
+										<li>Танцювальний стретчінг</li>
+										<li>19:30 - 20:30</li>
+										<li>Contemporary dance</li>
+									</ul>
+								</div>
+							</div>
+							<div class="div-wrap-days">
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<div class="block-left">П'ятниця</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<ul class="block-right">
+										<li>18:30 - 19:30</li>
+										<li>Танцювальний стретчінг</li>
+										<li>19:30 - 20:30</li>
+										<li>Contemporary dance</li>
+									</ul>
+								</div>
+							</div>
+
+
+<!-- 							<div class="col-lg-5 col-md-5 col-sm-12 block-left">
+	<ul>
+		<li>Понеділок</li>
+		<li>Середа</li>
+		<li>П'ятниця</li>
+	</ul>
+</div>
+
+<div class="col-lg-7 col-md-7 col-sm-12 block-right">
+	<ul>
+		<li>18:30 - 19:30</li>
+		<li>Танцювальний стретчінг</li>
+		<li>19:30 - 20:30</li>
+		<li>Contemporary dance</li>
+	</ul>
+	
+	<ul>
+		<li>18:30 - 19:30</li>
+		<li>Танцювальний стретчінг</li>
+		<li>19:30 - 20:30</li>
+		<li>Contemporary dance</li>
+	</ul>
+	
+	<ul>
+		<li>18:30 - 19:30</li>
+		<li>Танцювальний стретчінг</li>
+		<li>19:30 - 20:30</li>
+		<li>Contemporary dance</li>
+	</ul>
+</div> -->
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="contacts-id" class="contacts s-wide" >
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-lg-4 col-md-4 col-sm-12 col-sx-12">
+				<p>Контакти</p>
+				<ul>
+					<li><i class="fas fa-building"></i>ТЦ "Хрекатицькі тунелі"</li>
+					<li><i class="fas fa-map-marker-alt"></i>Київ, вул. Ольгинська, 2/4 М Хрещатик</li>
+					<li><i class="fas fa-street-view"></i>2-й поверх , зал 2 (біля квіткового)</li>
+					<li><i class="fas fa-phone"></i>+38 (055) 656-65-12</li>
+					<li><i class="fas fa-phone"></i>+38 (095) 995-50-91</li>
+				</ul>
+
+				<div class="social">
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="col-lg-8 col-md-8 col-sm-12 col-sx-12">
+				<div class="map-wrap">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1270.3480928629624!2d30.527648581111823!3d50.4467594346573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce539d2ecfc9%3A0xae7d39e5f5350cf3!2z0YPQuy4g0J7Qu9GM0LPQuNC90YHQutCw0Y8sIDIvNCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1562083577259!5m2!1sru!2sua" width="700" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</section>
+
+	<script>
+
+		//header Styles (header.min.css)
+		var ms = document.createElement("link"); ms.rel = "stylesheet";
+		ms.href = "css/header.min.css"; document.getElementsByTagName('head')[0].appendChild(ms);
+
+		//User Styles ()
+		var ms = document.createElement("link"); ms.rel = "stylesheet";
+		ms.href = "css/main.min.css"; document.getElementsByTagName('head')[0].appendChild(ms);
+
+	</script>
+</body>
+</html>
